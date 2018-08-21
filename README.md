@@ -12,4 +12,3 @@ Automatic score handling was implemented.
 
 ![dm](https://github.com/JohanWindahl/Thirty/blob/master/png/snap1.png)
 ![dm](https://github.com/JohanWindahl/Thirty/blob/master/png/snap2.png)
-![dm](https://github.com/JohanWindahl/Thirty/blob/master/png/snap3.png)
