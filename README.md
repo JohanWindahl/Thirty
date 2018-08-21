@@ -8,7 +8,7 @@ The gamerounds are: Below 3 and Multipel of {3,4,5,6,7,8,9,10,11,12}. In Below 3
 
 Automatic score handling was implemented.
 
-
+ 
 
 ![dm](https://github.com/JohanWindahl/Thirty/blob/master/png/snap1.png)
 ![dm](https://github.com/JohanWindahl/Thirty/blob/master/png/snap2.png)
