@@ -1,5 +1,5 @@
 # Thirty
-First assignment in course:  Development of mobile applications
+First assignment in course: Development of Mobile Applications - 5DV155
 
 **Language: Java**
 
