@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/diceLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintBottom_toTopOf="@+id/t"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollBtn">
+
+        <ImageButton
+            android:id="@+id/imageDice0"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="16.666666"
+            android:background="@android:color/white"
+            android:scaleType="fitCenter"
+            >
+
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageDice1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="16.666666"
+            android:background="@android:color/white"
+            android:scaleType="fitCenter"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageDice2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="16.666666"
+            android:background="@android:color/white"
+            android:scaleType="fitCenter"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageDice3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="16.666666"
+            android:background="@android:color/white"
+            android:scaleType="fitCenter"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageDice4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="16.666666"
+            android:background="@android:color/white"
+            android:scaleType="fitCenter"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageDice5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="16.666666"
+            android:background="@android:color/white"
+            android:scaleType="fitCenter"></ImageButton>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalScoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Score: 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/diceLinearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/endRoundBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameRoundsList" />
+
+    <TextView
+        android:id="@+id/throwTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="Throw #0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/desc"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTxt" />
+
+    <TextView
+        android:id="@+id/rndTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="Round #0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/desc"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTxt" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="280dp"
+        android:layout_height="20dp"
+        android:text="Gameround  |  Prel score | End Score"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/gameRoundsList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/throwTxt" />
+
+    <TextView
+        android:id="@+id/mainTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:text="Thirty"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/throwTxt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/endRoundBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:enabled="false"
+        android:text="End round"
+        app:layout_constraintBottom_toTopOf="@+id/diceLinearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/rollBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/totalScoreTxt"
+        app:layout_constraintTop_toBottomOf="@+id/gameRoundsList" />
+
+    <Button
+        android:id="@+id/rollBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        app:layout_constraintBottom_toTopOf="@+id/diceLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/endRoundBtn"
+        app:layout_constraintTop_toBottomOf="@+id/gameRoundsList" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="393dp" />
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Save dice by tapping on it"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diceLinearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/gameRoundsList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/rollBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc">
+
+    </ListView>
+
+
+</android.support.constraint.ConstraintLayout>

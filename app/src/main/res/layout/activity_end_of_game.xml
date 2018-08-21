@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndOfGameActivity">
+
+    <Button
+        android:id="@+id/playAgainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="124dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="364dp"
+        android:text="Play again"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EOGtotalScoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginRight="141dp"
+        android:layout_marginStart="141dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/playAgainBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/yswTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginRight="141dp"
+        android:layout_marginStart="141dp"
+        android:text="Your score was:"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/EOGtotalScoreTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/conTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginRight="141dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="16dp"
+        android:text="Congratulations!"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/yswTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
